@@ -1,0 +1,299 @@
+
+/* PLAYER PROFILE LAYOUT */
+.player-profile {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.player-picture,
+.player-education {
+    flex: 1;
+    padding: 20px;
+    background-color: #0B1228;
+    border: 1px solid #00FFFF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.player-picture {
+    text-align: center;
+}
+
+.player-picture img {
+    width: 100%;
+    max-width: 220px;
+    height: 240px;
+    object-fit: cover;
+    border: 2px solid #00FFFF;
+    border-radius: 5px;
+}
+
+.player-education p {
+    padding: 10px;
+    border-bottom: 1px solid #164B60;
+}
+
+.profile-table {
+    width: 100%;
+    max-width: 900px;
+}
+
+@media (max-width: 600px) {
+    .player-profile {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050816;
+    color: #00FFFF;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #00FFFF;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.65);
+}
+
+h1 {
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0 0 10px #00FFFF;
+}
+
+.system-header,
+.system-window,
+section,
+footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.system-header {
+    text-align: center;
+    padding: 24px 10px;
+    border-bottom: 1px solid #00FFFF;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    padding: 20px 10px;
+    margin: 0 auto 28px;
+    border-bottom: 1px solid #00FFFF;
+}
+
+.navigation a {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 28px 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.6);
+    scroll-margin-top: 20px;
+}
+
+.system-window {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #0B1228;
+    box-shadow: 0 0 12px rgba(0, 59, 80, 0.6);
+}
+
+th, td {
+    border: 1px solid #00FFFF;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background: #102440;
+    letter-spacing: 1px;
+}
+
+.profile-table th {
+    width: 40%;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 22px auto 0;
+    text-align: center;
+}
+
+.subheading {
+    margin-top: 30px;
+}
+
+.skill-list {
+    text-align: center;
+}
+
+.section-intro {
+    text-align: center;
+}
+
+.activity-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 18px 8px 24px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overscroll-behavior-x: contain;
+    scrollbar-color: #00FFFF #0B1228;
+    scrollbar-width: thin;
+}
+
+.activity-card {
+    flex: 0 0 340px;
+    max-width: 85%;
+    min-width: 0;
+    padding: 18px;
+    background: #0B1228;
+    border: 1px solid #00FFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.15);
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.activity-card h3 {
+    font-size: 16px;
+    margin: 4px 0 16px;
+}
+
+.activity-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #050816;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+}
+
+.activity-card p {
+    font-size: 13px;
+    margin: 14px 0 0;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px 0 4px;
+}
+
+button {
+    background: #0B1228;
+    color: #00FFFF;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #10334a;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.35);
+}
+
+.image-note {
+    text-align: center;
+    color: #a9e9ef;
+    font-size: 13px;
+}
+
+.quest-table td {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 10px 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .navigation {
+        gap: 12px;
+    }
+
+    .activity-card {
+        flex-basis: 85%;
+    }
+
+    th, td {
+        padding: 9px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .slider-controls button {
+        padding: 9px 12px;
+    }
+}
